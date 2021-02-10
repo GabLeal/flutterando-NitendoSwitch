@@ -1,18 +1,13 @@
-# nitendoSwitch
+# Intro
 
-A new Flutter project.
+The community of flutterando proposed a challenge in which a design inspired by the nitendo switch should be recreated with only widgets without using images.
 
-## Getting Started
+## Mockup Link
 
-This project is a starting point for a Flutter application.
+[Project figma](https://www.figma.com/file/EVeqd5Nlgr3MNE2JyespMj/NintendoSwt-Flutterando?node-id=2%3A102).
 
-A few resources to get you started if this is your first Flutter project:
-    ![GitHub Logo](/images/mocup.png)
-    Format: ![Alt Text](url)
+## Original ScreenShoot
+![ ](/assets/mockup.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## My Result
+![ ](/assets/mockup.png)
