@@ -8,7 +8,6 @@ The community of flutterando proposed a challenge in which a design inspired by 
 
 
 ## Result
-<img src="/assets/flutterNitendo.jpeg" height="500">
 
 | Original ScreenShoot  |  My Result  |
 | ------------------- | ------------------- |
