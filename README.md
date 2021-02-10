@@ -7,7 +7,7 @@ The community of flutterando proposed a challenge in which a design inspired by 
 [Project figma](https://www.figma.com/file/EVeqd5Nlgr3MNE2JyespMj/NintendoSwt-Flutterando?node-id=2%3A102).
 
 ## Original ScreenShoot
-![ ](/assets/mockup.png)
+<img src="/assets/mockup.png" height="500">
 
 ## My Result
-![ ](/assets/mockup.png)
+<img src="/assets/flutterNitendo.jpeg" height="500">
