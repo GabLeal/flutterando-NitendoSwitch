@@ -17,79 +17,80 @@ class _HomeState extends State<Home> {
         end: Alignment.bottomCenter,
         colors: [Color.fromRGBO(75, 80, 84, 1), Color.fromRGBO(39, 43, 46, 1)],
       )),
-      child: Stack(
-        children: [
-          Align(
-            alignment: Alignment.topCenter,
-            child: Container(
-                margin:
-                    EdgeInsets.only(top: 40, left: 20, right: 20, bottom: 30),
-                decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(10)),
-                height: height * 0.50,
-                child: console(width * 0.7, Colors.white, Colors.black)),
-          ),
-          Positioned(
-              bottom: 0,
-              left: 0,
+      child: SafeArea(
+        child: Stack(
+          children: [
+            Align(
+              alignment: Alignment.topCenter,
               child: Container(
-                decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 189, 221, 1),
-                    borderRadius:
-                        BorderRadius.only(topRight: Radius.circular(100))),
-                height: height * 0.40,
-                width: width * 0.35,
-                child: borderSideLeft(),
-              )),
-          Positioned(
-              bottom: 0,
-              right: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: Color.fromRGBO(255, 95, 83, 1),
-                    borderRadius:
-                        BorderRadius.only(topLeft: Radius.circular(100))),
-                height: height * 0.40,
-                width: width * 0.35,
-                child: borderSideRitght(),
-              )),
-          Positioned(
-              bottom: 100,
-              right: 126,
-              child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                width: width * 0.3,
-                height: width / 4 * 0.5,
-                // color: Colors.pink,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        dots(color: Color.fromRGBO(182, 235, 165, 1)),
-                        dots(color: Color.fromRGBO(34, 35, 39, 1)),
-                        dots(color: Color.fromRGBO(34, 35, 39, 1)),
-                        dots(color: Color.fromRGBO(34, 35, 39, 1))
-                      ],
-                    ),
-                    console(
-                        width / 4, Colors.black, Color.fromRGBO(39, 43, 46, 1)),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        dots(color: Color.fromRGBO(34, 35, 39, 1)),
-                        dots(color: Color.fromRGBO(34, 35, 39, 1)),
-                        dots(color: Color.fromRGBO(34, 35, 39, 1)),
-                        dots(color: Color.fromRGBO(34, 35, 39, 1))
-                      ],
-                    ),
-                  ],
-                ),
-              ))
-        ],
+                  margin: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(10)),
+                  height: height * 0.50,
+                  child: console(width * 0.7, Colors.white, Colors.black)),
+            ),
+            Positioned(
+                bottom: 0,
+                left: 0,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(0, 189, 221, 1),
+                      borderRadius:
+                          BorderRadius.only(topRight: Radius.circular(100))),
+                  height: height * 0.40,
+                  width: width * 0.35,
+                  child: borderSideLeft(),
+                )),
+            Positioned(
+                bottom: 0,
+                right: 0,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(255, 95, 83, 1),
+                      borderRadius:
+                          BorderRadius.only(topLeft: Radius.circular(100))),
+                  height: height * 0.40,
+                  width: width * 0.35,
+                  child: borderSideRitght(),
+                )),
+            Positioned(
+                bottom: 100,
+                right: 126,
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  width: width * 0.3,
+                  height: width / 4 * 0.5,
+                  // color: Colors.pink,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          dots(color: Color.fromRGBO(182, 235, 165, 1)),
+                          dots(color: Color.fromRGBO(34, 35, 39, 1)),
+                          dots(color: Color.fromRGBO(34, 35, 39, 1)),
+                          dots(color: Color.fromRGBO(34, 35, 39, 1))
+                        ],
+                      ),
+                      console(width / 4, Colors.black,
+                          Color.fromRGBO(39, 43, 46, 1)),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          dots(color: Color.fromRGBO(34, 35, 39, 1)),
+                          dots(color: Color.fromRGBO(34, 35, 39, 1)),
+                          dots(color: Color.fromRGBO(34, 35, 39, 1)),
+                          dots(color: Color.fromRGBO(34, 35, 39, 1))
+                        ],
+                      ),
+                    ],
+                  ),
+                ))
+          ],
+        ),
       ),
     );
   }
@@ -210,7 +211,7 @@ class _HomeState extends State<Home> {
       width: 65,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.black.withOpacity(0.5)),
+        border: Border.all(color: Colors.black),
         shape: BoxShape.circle,
         gradient: LinearGradient(
           begin: Alignment.topCenter,
@@ -241,14 +242,14 @@ class _HomeState extends State<Home> {
           width: 50,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.black.withOpacity(0.5), width: 1),
+            border: Border.all(color: Colors.black.withOpacity(0.5)),
             shape: BoxShape.circle,
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color.fromRGBO(104, 109, 112, 1),
-                Color.fromRGBO(5, 15, 17, 1)
+                Color.fromRGBO(103, 106, 111, 1),
+                Color.fromRGBO(36, 38, 37, 1)
               ],
             ),
           ),
@@ -381,7 +382,7 @@ class _HomeState extends State<Home> {
         ),
         Positioned(
             right: 10,
-            bottom: 50,
+            bottom: 60,
             child: Column(
               children: [
                 Padding(padding: EdgeInsets.all(15), child: analogico()),
@@ -393,7 +394,7 @@ class _HomeState extends State<Home> {
             left: 0,
             child: Container(
                 padding: EdgeInsets.all(3),
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.all(15),
                 height: 30,
                 width: 30,
                 decoration: BoxDecoration(
@@ -472,7 +473,7 @@ class _HomeState extends State<Home> {
         ),
         Positioned(
             left: 10,
-            bottom: 55,
+            bottom: 60,
             child: Column(
               children: [
                 groupButtonRight(),
@@ -489,7 +490,7 @@ class _HomeState extends State<Home> {
                   border: Border.all(
                       color: Color.fromRGBO(143, 137, 137, 1), width: 3)),
               padding: EdgeInsets.all(3),
-              margin: EdgeInsets.all(10),
+              margin: EdgeInsets.all(15),
               child: Icon(Icons.home),
             ))
       ],
