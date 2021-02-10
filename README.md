@@ -13,4 +13,11 @@ The community of flutterando proposed a challenge in which a design inspired by 
 | ------------------- | ------------------- |
 |  <img src="/assets/mockup.png" height="500"> | <img src="/assets/flutterNitendo.jpeg" height="500"> |
 
+[X] sombreado no analogico
+[X] tirar negrito das letras
+[X] borderSide menos arredondado
+[X] botao mais e menos deve ser maior
+[X] bolinha do console mais bra suma
+[X] degrade bolinha
+
 
