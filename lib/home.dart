@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
                   decoration: BoxDecoration(
                       color: Color.fromRGBO(0, 189, 221, 1),
                       borderRadius:
-                          BorderRadius.only(topRight: Radius.circular(100))),
+                          BorderRadius.only(topRight: Radius.circular(80))),
                   height: height * 0.40,
                   width: width * 0.35,
                   child: borderSideLeft(),
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
                   decoration: BoxDecoration(
                       color: Color.fromRGBO(255, 95, 83, 1),
                       borderRadius:
-                          BorderRadius.only(topLeft: Radius.circular(100))),
+                          BorderRadius.only(topLeft: Radius.circular(80))),
                   height: height * 0.40,
                   width: width * 0.35,
                   child: borderSideRitght(),
@@ -155,7 +155,7 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(bottom: width * 0.14),
+                padding: EdgeInsets.only(bottom: width * 0.17),
                 child: Container(
                   decoration: BoxDecoration(
                       color: color2,
@@ -178,8 +178,8 @@ class _HomeState extends State<Home> {
           shape: BoxShape.circle,
           // borderRadius: BorderRadius.circular(50),
           gradient: LinearGradient(
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
               Color.fromRGBO(123, 130, 135, 1),
               Color.fromRGBO(5, 15, 17, 1)
@@ -252,6 +252,14 @@ class _HomeState extends State<Home> {
                 Color.fromRGBO(36, 38, 37, 1)
               ],
             ),
+            // boxShadow: [
+            //   BoxShadow(
+            //     color: Colors.black.withOpacity(0.5),
+            //     spreadRadius: 5,
+            //     blurRadius: 7,
+            //     offset: Offset(0, 3), // changes position of shadow
+            //   ),
+            // ],
           ),
         ),
       ),
@@ -281,7 +289,7 @@ class _HomeState extends State<Home> {
                 child: circularButton(
                   child: Center(
                       child: Text(
-                    'B',
+                    'A',
                     style: TextStyle(
                         fontSize: 12,
                         color: Colors.white,
@@ -293,7 +301,7 @@ class _HomeState extends State<Home> {
                 child: circularButton(
                   child: Center(
                       child: Text(
-                    'A',
+                    'Y',
                     style: TextStyle(
                         fontSize: 12,
                         color: Colors.white,
@@ -305,7 +313,7 @@ class _HomeState extends State<Home> {
                 child: circularButton(
                   child: Center(
                       child: Text(
-                    'Y',
+                    'B',
                     style: TextStyle(
                         fontSize: 12,
                         color: Colors.white,
@@ -484,14 +492,19 @@ class _HomeState extends State<Home> {
             bottom: 0,
             right: 0,
             child: Container(
-              decoration: BoxDecoration(
-                  color: Color.fromRGBO(51, 56, 60, 1),
-                  borderRadius: BorderRadius.circular(50),
-                  border: Border.all(
-                      color: Color.fromRGBO(143, 137, 137, 1), width: 3)),
-              padding: EdgeInsets.all(3),
               margin: EdgeInsets.all(15),
-              child: Icon(Icons.home),
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.black)),
+              child: Container(
+                decoration: BoxDecoration(
+                    color: Color.fromRGBO(51, 56, 60, 1),
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border.all(
+                        color: Color.fromRGBO(143, 137, 137, 1), width: 3)),
+                padding: EdgeInsets.all(3),
+                child: Icon(Icons.home),
+              ),
             ))
       ],
     );
